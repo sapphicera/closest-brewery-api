@@ -1,0 +1,7 @@
+POST http://localhost:3000/locations.json
+content-type: application/json
+
+{
+  "City": "West Chester",
+  "StateABRV": "PA"
+}
