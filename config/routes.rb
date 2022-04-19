@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   post "/locations" => "locations#create" # find new match
+  get "/locations" => "locations#index"
 end

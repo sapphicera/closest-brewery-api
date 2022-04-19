@@ -1,3 +1,8 @@
+### index
+GET http://localhost:3000/locations
+
+
+###
 POST http://localhost:3000/locations.json
 content-type: application/json
 
