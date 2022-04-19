@@ -12,9 +12,9 @@ require 'geocoder'
 Location.all.each do |element|
   geocode = Geocoder.search(element[:address])
   if geocode != []
-    # element[:latlon] = [geocode[0].data['lat'], geocode[0].data['lon']]
-    # element.save!
-    geocode[0].coordinates
+    element[:latitude] = geocode[0].data['lat']
+    element[:longitude] = geocode[0].data['lon']
+    element.save!
     p element
   end
 end
