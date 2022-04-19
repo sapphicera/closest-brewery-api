@@ -10,5 +10,5 @@ end
 require 'geocoder'
 
 Location.all.each do |element|
-  element[:latlon] = Geocoder.search(Location.first[:address]
+  element[:latlon] = Geocoder.search(Location.first[:address])
 end
